@@ -52,7 +52,12 @@ public class Program {
 
                     Double salarioMedio = primeiroFuncionario.calcularMedia(salario1,salario2);
                     System.out.println("Salário Médio: " + salarioMedio);
-                    break;
+
+                    return;
+
+                default:
+                    System.out.println("Número inválido, digite novamente: ");
+                    questao = scan.nextInt();
             }
 
 
