@@ -25,7 +25,7 @@ public class Program {
             {
                 case 1:
 
-                    break;
+                    return;
 
                 case 2:
                     Funcionario primeiroFuncionario = new Funcionario();
@@ -49,9 +49,20 @@ public class Program {
                     Double salario2 = scan.nextDouble();
                     segundoFuncionario.setSalario(salario2);
 
-
                     Double salarioMedio = primeiroFuncionario.calcularMedia(salario1,salario2);
                     System.out.println("Salário Médio: " + salarioMedio);
+
+                    return;
+
+                case 3:
+
+                    return;
+
+                case 4:
+
+                    return;
+
+                case 5:
 
                     return;
 
