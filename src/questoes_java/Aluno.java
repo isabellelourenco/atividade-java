@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Aluno {
     private String nomeAluno;
-    //private ArrayList<Float> notas = new ArrayList<>();
     private Float primeiraNota;
     private Float segundaNota;
     private Float terceiraNota;
