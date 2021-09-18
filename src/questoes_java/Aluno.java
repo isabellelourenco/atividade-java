@@ -7,7 +7,6 @@ public class Aluno {
     private Float primeiraNota;
     private Float segundaNota;
     private Float terceiraNota;
-
     private Float notaFinal;
     private String Resultado;
 

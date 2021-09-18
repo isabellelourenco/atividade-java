@@ -56,6 +56,15 @@ public class Program {
                     return;
 
                 case 3:
+                    Retangulo retangulo = new Retangulo();
+                    System.out.println("Informe a largura do retângulo:  ");
+                    double larg =scan.nextDouble();
+
+
+                    System.out.println("Informe a altura do retângulo: ");
+                    double alt = scan.nextDouble();
+
+                   retangulo.resultado(larg,alt);
 
                     return;
 
@@ -83,7 +92,6 @@ public class Program {
                     aluno.setTerceiraNota(terceiraNota);
 
                     Float notaFinal = aluno.calcularMediaAluno(primeiraNota,segundaNota,terceiraNota);
-
 
                     if ( notaFinal >= 60 ){
                         System.out.println("Aluno Aprovado");
