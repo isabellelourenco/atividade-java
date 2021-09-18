@@ -2,6 +2,7 @@ package questoes_java;
 
 import java.util.Scanner;
 
+
 public class Program {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -63,7 +64,33 @@ public class Program {
                     return;
 
                 case 5:
+                    Aluno aluno = new Aluno();
+                    System.out.println("Digite o nome do Aluno");
+                    System.out.println("Nome: ");
+                    String nomeAluno = scan.next();
+                    aluno.setNomeAluno(nomeAluno);
 
+                    System.out.println("Digite a Primeira nota do aluno");
+                    float primeiraNota=scan.nextFloat();
+                    aluno.setPrimeiraNota(primeiraNota);
+
+                    System.out.println("Digite a Segunda nota do aluno");
+                    float segundaNota=scan.nextFloat();
+                    aluno.setSegundaNota(segundaNota);
+
+                    System.out.println("Digite a Terceira nota do aluno");
+                    float terceiraNota=scan.nextFloat();
+                    aluno.setTerceiraNota(terceiraNota);
+
+                    Float notaFinal = aluno.calcularMediaAluno(primeiraNota,segundaNota,terceiraNota);
+
+
+                    if ( notaFinal >= 60 ){
+                        System.out.println("Aluno Aprovado");
+                        } else{
+                        System.out.println("Aluno Reprovado");
+                        System.out.println("Faltam: " + (60 - notaFinal));
+                };
                     return;
 
                 default:
